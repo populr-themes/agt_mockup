@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <!-- Name of yur theme -->
+  <title>Americana Music Association</title>
+
+<!--
+  <palette class="palette-default" name="Default" preview="#ffffff,#222222">
+-->
+
+  <!-- Add any styles your theme requires here -->
+  <link rel="stylesheet/less" type="text/css" href="/styles/main.less">
+  
+  <!-- This script loads the Populr theming engine. Populr will automatically remove it at runtime. -->
+  <script src="http://populr.me/assets/developers/themer.js"></script>
+  
+  <!-- Add any javscript your theme requires here -->
+  <script src="/js/jquery.imagesloaded.min.js"></script>
+  <script src="/js/main.js"></script>
+
+</head>
+<body>
+  <!-- Put your theme's HTML inside this script tag. The script tag will 
+       prevent issues with quote escaping and invalid markup. -->
+  <script id="theme" type="text/x-handlebars-template">
+
+    <div id="main-wrapper">
+
+    {{pop_links}}
+
+    {{#region "columnizer" id="main-region" max_cols="3" max_auto_assets="0" dummy_content="T-1|T-1,T-1|I-1|I-3|I-1,I-3|T-1,I-1,I-3|V-1|V-2|V-1,V-3|V-1,V-3,D-3|D-3|D-1,D-3|E-1|E-2|E-1,E-2|E-1,E-2,E-3"}}
+
+      {{#asset "text" size="1"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      {{#asset "text" size="2"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      {{#asset "text" size="3"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      
+      {{#asset "imagegroup" size="1"}}
+      {{{title}}}
+        <div class="content">
+          {{{imageslider images width="880" height="500"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "imagegroup" size="2"}}
+        {{{title}}}
+        <div class="content">
+          {{{imageslider images width="431" height="323" crop-single=true}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+  
+      {{#asset "imagegroup" size="3"}}
+        {{{title}}}
+        <div class="content">
+          {{{imageslider images width="282" height="212" crop-single=true}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+  
+      {{#asset "videogroup" size="1"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="880" height="660" resolution="large"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "videogroup" size="2"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="431" height="323" resolution="medium"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "videogroup" size="3"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="282" height="212" resolution="small"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "documentgroup" size="1"}}
+        {{{title}}}
+        <ul class="documents">
+          {{#documents}}
+            <li><a href="{{original_url}}">{{title}}</a></li>
+          {{/documents}}
+        </ul>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "documentgroup" size="2"}}
+        {{{title}}}
+        <ul class="documents">
+            {{#documents}}
+              <li><a href="{{original_url}}">{{title}}</a></li>
+            {{/documents}}
+          </ul>
+          {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "documentgroup" size="3"}}
+        {{{title}}}
+        <ul class="documents">
+          {{#documents}}
+            <li><a href="{{original_url}}">{{title}}</a></li>
+          {{/documents}}
+        </ul>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "embedgroup" size="1" width="880"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "embedgroup" size="2" width="431"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "embedgroup" size="3" width="282"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+    {{/region}}
+
+  </div>
+
+  <div class="copyright">&copy; 2013 The Lost Trailers.</div>
+
+    {{#region "columnizer" id="footer-region" max_cols="3" max_auto_assets="0" dummy_content="T-1|T-1,T-1|I-1|I-3|I-1,I-3|T-1,I-1,I-3|V-1|V-2|V-1,V-3|V-1,V-3,D-3|D-3|D-1,D-3|E-1|E-2|E-1,E-2|E-1,E-2,E-3"}}
+
+      {{#asset "text" size="1"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      {{#asset "text" size="2"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      {{#asset "text" size="3"}}
+        {{{title}}}
+        {{{body}}}
+      {{/asset}}
+
+      
+      {{#asset "imagegroup" size="1"}}
+      {{{title}}}
+        <div class="content">
+          {{{imageslider images width="880" height="500"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "imagegroup" size="2"}}
+        {{{title}}}
+        <div class="content">
+          {{{imageslider images width="431" height="323" crop-single=true}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+  
+      {{#asset "imagegroup" size="3"}}
+        {{{title}}}
+        <div class="content">
+          {{{imageslider images width="282" height="212" crop-single=true}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+  
+      {{#asset "videogroup" size="1"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="880" height="660" resolution="large"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "videogroup" size="2"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="431" height="323" resolution="medium"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "videogroup" size="3"}}
+        {{{title}}}
+        <div class="content">
+          {{{videoplayer contents width="282" height="212" resolution="small"}}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "documentgroup" size="1"}}
+        {{{title}}}
+        <ul class="documents">
+          {{#documents}}
+            <li><a href="{{original_url}}">{{title}}</a></li>
+          {{/documents}}
+        </ul>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "documentgroup" size="2"}}
+        {{{title}}}
+        <ul class="documents">
+            {{#documents}}
+              <li><a href="{{original_url}}">{{title}}</a></li>
+            {{/documents}}
+          </ul>
+          {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "documentgroup" size="3"}}
+        {{{title}}}
+        <ul class="documents">
+          {{#documents}}
+            <li><a href="{{original_url}}">{{title}}</a></li>
+          {{/documents}}
+        </ul>
+        {{{description}}}
+      {{/asset}}
+ 
+      {{#asset "embedgroup" size="1" width="880"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "embedgroup" size="2" width="431"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+
+      {{#asset "embedgroup" size="3" width="282"}}
+        {{{title}}}
+        <div class="content">
+        {{#embeds}}
+          <div class="embed">{{{html}}}</div>
+        {{/embeds}}
+        </div>
+        {{{description}}}
+      {{/asset}}
+    
+    {{/region}}
+    
+  </script>  
+
+</body>
+</html>
